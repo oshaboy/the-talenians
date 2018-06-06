@@ -1,0 +1,11 @@
+[v] Can't jump off slope
+
+[v] Going up or down flips camera
+
+[v] looking down makes you move slower
+
+[v] Can't jump near a slope
+
+[v] Drop Shadow EVERYTHING
+
+[v] Camera can clip 

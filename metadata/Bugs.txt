@@ -1,0 +1,11 @@
+cursor is visible
+sensitivity is really high
+if you move your cursor below the charecter instead of stopping to move it flips
+needs a drop shadow
+running into the mountain and is bumpy, after a while you submerge into it and then launch to space.
+jumping should be acceleration (mario 64 gives the charecter a speed of 30 units per second and then makes him lose 4 units a second)
+moving left and right a lot on a slope makes you fall through it
+moving diagonaly is faster then straight?
+moving sidewards is faster then straight?
+^ might be the fact that after you land you keep the airspeed and as such move slower, also the sidewards air speed is faster
+spamming spacebar up the mountain is just all kinda of weird

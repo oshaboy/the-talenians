@@ -1,0 +1,7 @@
+fileFormatVersion: 2
+guid: b52b4b84d409adc4eb44aeafe279aa28
+ShaderImporter:
+  defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: 39413e2567f4b452db0d4a76dbef5419, type: 3}
+  - _ToonShade: {fileID: 2800000, guid: 39413e2567f4b452db0d4a76dbef5419, type: 3}
+  userData: 

@@ -1,0 +1,51 @@
+[1/21/2017 5:37:14 PM] Abba: I ran the project and it said "no cameras rendering"
+[1/21/2017 5:37:24 PM] Abba: How do I see the problem?
+[1/21/2017 5:37:26 PM] Noam Gilor: Open the scene
+[1/21/2017 5:37:45 PM] Abba: Ok. Thanks
+[1/21/2017 6:02:06 PM] Abba: How do I get the debugger to work?
+[1/21/2017 6:05:27 PM] Abba: Figured it out
+[1/21/2017 6:25:49 PM] Abba: Okay, I found the problem.
+[1/21/2017 6:25:56 PM] Abba: It seems like mesh colliders do not work.
+[1/21/2017 6:25:57 PM] Noam Gilor: yay
+[1/21/2017 6:26:06 PM] Abba: If you put a box collider on the plane, it will work.
+[1/21/2017 6:26:26 PM] Noam Gilor: thanks
+[1/21/2017 6:26:35 PM] Noam Gilor: but what if i want a terrain
+[1/21/2017 6:29:04 PM] Abba: Let me check
+[1/21/2017 6:32:15 PM] Abba: Ok. Option two:
+[1/21/2017 6:32:37 PM] Abba: Leave it as a plane. Just remove "Use Gravity" from the plane and mark it as Kinematic
+[1/21/2017 6:32:50 PM] Abba: (Leave mesh collider)
+[1/21/2017 6:33:02 PM] Noam Gilor: what?
+[1/21/2017 6:33:09 PM] Abba: Leave everything as before.
+[1/21/2017 6:33:21 PM] Abba: Just mark, on the Plane, "Is Kinematic"
+[1/21/2017 6:33:31 PM] Abba: I would also remove from the Plane "Use Gravity"
+[1/21/2017 6:33:41 PM] Abba: Though it has no effect
+[1/21/2017 6:35:21 PM] Noam Gilor: but isn't "is kinematic" like having no rigidbody?
+[1/21/2017 6:36:00 PM] Abba: No. It means that it is not movable.
+[1/21/2017 6:36:07 PM] Abba: Without you requesting to move it.
+[1/21/2017 6:36:33 PM] Noam Gilor: so what is the difference between that and setting all constraints?
+[1/21/2017 6:36:34 PM] Abba: But I can check further.
+[1/21/2017 6:36:51 PM] Abba: The constraints means that if it is bumped into, will it move.
+[1/21/2017 6:38:00 PM] Noam Gilor: what?
+[1/21/2017 6:38:06 PM] Abba: I see that if isKinematic, then bumped into will not move it.
+[1/21/2017 6:38:42 PM] Abba: So constraints is a way to set specific things.
+[1/21/2017 6:44:14 PM] Abba: Note: If the plane is just a plane, box collider is better. If it is a terrain, then you have no choice.
+[1/21/2017 8:04:09 PM] Noam Gilor: abba
+[1/21/2017 8:04:16 PM] Noam Gilor: so i marked isKinematic in the real code
+[1/21/2017 8:04:19 PM] Noam Gilor: it changed nothing
+[1/21/2017 8:04:23 PM] Noam Gilor: i will try it in the simplified
+[1/21/2017 8:04:27 PM] Abba: Where did you mark it?
+[1/21/2017 8:04:30 PM] Abba: On the plane?
+[1/21/2017 8:04:41 PM] Noam Gilor: yes
+[1/21/2017 8:05:00 PM] Abba: Also, please change collision from discrete to continuous.
+[1/21/2017 8:05:08 PM] Noam Gilor: k
+[1/21/2017 8:05:19 PM] Noam Gilor: wait
+[1/21/2017 8:05:21 PM] Abba: On both the rigid body and the plane
+[1/21/2017 8:05:24 PM] Noam Gilor: i am opening the simplified project
+[1/21/2017 8:17:42 PM] Noam Gilor: i still cannot make it collide on the original project
+[1/21/2017 8:17:49 PM | Edited 8:17:46 PM] Noam Gilor: can you do it?
+[1/21/2017 8:18:26 PM] Abba: I'll connect
+[1/21/2017 8:18:34 PM] Noam Gilor: sure
+[1/21/2017 8:20:26 PM] Noam Gilor: thanks
+[1/21/2017 8:20:29 PM] Noam Gilor: what did you do?
+[1/21/2017 8:22:01 PM] Abba: You put kinematic on the cylinder, not on the plane
+[1/21/2017 8:22:43 PM] Abba: So I took it off cylinder
